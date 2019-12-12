@@ -1,10 +1,11 @@
-// **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTION!!! You will be doing only front-end work in 421 and you need to brush up on your HTML elements**
+// **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTIONS!!! You will be doing only front-end work in 421 and you need to brush up on your HTML elements**
 
 
 // ***************************
 //          PART ONE
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
+console.log(new Date)
 
 const displayDate = () => {
   const currentDate = new Date()

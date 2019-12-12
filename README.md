@@ -18,7 +18,13 @@
 1. Notice the link to `main.js`
 1. Display your results to the user in the DOM using `<button>` and `<input>`.
 
-(*NOTE: Clone, setup, testing, and running instructions for all projects is below*)
+### Hints
+
+1. Use [repl.it](https://www.repl.it) to write the solution code first. (its a faster environment vs using the `node main.js` command over and over again.)
+1. Download the Live Server package to VS Code by Ritwick Dey to view it at localhost:5500
+1. **OR** use the `npm start` command to view it at localhost:8080
+1. Use the [JS Docs at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString)
+1. **Clone, setup, testing, and running instructions for all projects is below**
 
 ******
 
