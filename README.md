@@ -10,7 +10,7 @@
 
 1. Navigate to `main.js`
 1. Read the instructions and build the functions to satisfy the tasks.
-1. There are no tests for this project.
+1. There are no unit tests for this project.
 
 ### Part 2
 
