@@ -16,9 +16,21 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
+var i = 0;
+
+const convertNumberToString = () => {
+   i+=10;
+  document.getElementById("number-converter").innerHTML = i.toString();
+}
+
 
 
 // Write a JavaScript program to convert a string to the number.
+
+const convertStringToNumber = () => {
+  const mystring = document.getElementById("number-input").value;
+  document.getElementById("string-converter").innerHTML = parseInt(mystring, 10);
+}
 
 
 
@@ -29,22 +41,92 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
+
+var lightsOn = true;
   
+const showDataTypes = () => {
+  if (lightsOn) { document.body.style.background = "black";
+  document.body.style.color = "white";
+  document.getElementById("darkmode-button").innerText = "Light Mode";
+    lightsOn = false;
+  }else if (!lightsOn) { document.body.style.background = "white";
+  document.body.style.color = "black";
+  document.getElementById("darkmode-button").innerText = "Dark Mode";
+    lightsOn = true;
+  }
+  
+}
+
+
+let potato = null;
+potato;
+console.log(potato);
+// document.getElementById("nulldiv").innerHTML = "Here's a null variable" + getType(potato) + "<br/>";
+
+let rutebaga;
+rutebaga;
+console.log(rutebaga);
+// document.getElementById("nulldiv").innerHTML = rutebaga;
+
+
+
+const outputNumber = () => {
+  const x = 100;
+document.getElementById("number-output").innerHTML = x;
+}
+
+const convertStringToNumber2 = () => {
+  const mystring = 50;
+  document.getElementById("notanumber").innerHTML = parseInt(mystring, 2);
+}
+
+const stringOutput = () => {
+  const aString = "Hello World!";
+  document.getElementById("string").innerHTML = aString;
+}
+
 
   
 // Write a JavaScript program that adds 2 numbers together.
 
+const addTwoNumbers = () => {
+  const num1 = document.getElementById("number1").value
+  const num2 = document.getElementById("number2").value
+  var num = +num1 + +num2;
+
+  document.getElementById("addnumbers").innerHTML = num;
+}
+  
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+
+var x = 15;
+var y = 40;
+
+  document.getElementById("twotrue").innerHTML = (x < 18 && y < 60);
 
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+var x = 20;
+var y = 40;
+
+document.getElementById("onetrue").innerHTML = (x < 30 || y < 35);
 
 
-// Write a JavaScript program that runs when both things are not true.  
+// Write a JavaScript program that runs when both things are not true. 
+
+var x = 6;
+var y = 3;
+
+document.getElementById("nottrue").innerHTML = 
+(x === y) && (x < y);
+
+
+
+
 
 // ***************************
 //         PART TWO
