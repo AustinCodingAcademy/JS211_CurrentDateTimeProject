@@ -13,7 +13,16 @@ const displayDate = () => {
 }
  
 
-// Write a JavaScript program to convert a number to a string.
+// Below is a JavaScript program to convert a number to a string.
+
+const b = 10;
+console.log(typeof b);
+
+b.toString(b);
+console.log(typeof b);
+
+
+// Below is a JavaScript program that came with the Git.
 
 const num = () => {
   const num = 11
@@ -22,23 +31,13 @@ const num = () => {
   document.getElementById("display-number1").toString(num);
 }
 
-const addSum = () => {
-  const num1 = 10
-    const num2 = 12
-    console.log(parseFloat(num1) + parseFloat(num2));
-  
-    let addSum = document.getElementById("display-number2").innerHTML = addSum;
-  }
-
-// const num = 11;
-// document.getElementById("display-number1").toString();
-// console.log('typeof num.toString()', typeof num.toString());
-
 // Write a JavaScript program to convert a string to the number.
 
-const str = 21;
-console.log(parseInt(str));
-console.log('typeof paraseInt(str)', typeof parseInt(str)); 
+const a = '10';
+console.log(typeof a);
+
+a.toNumber(a);
+console.log(typeof a);
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -52,29 +51,73 @@ console.log('typeof paraseInt(str)', typeof parseInt(str));
 
   
 // Write a JavaScript program that adds 2 numbers together.
-// const addSum = () => {
-//   const num1 = 10
-//   const num2 = 12
-//   console.log(parseFloat(num1) + parseFloat(num2))
-
-//   let addSum = document.getElementById("display-number2").innerHTML = addSum;
-// }
 
 
-// const num1 = 10;
-// const num2 = 12;
-// console.log(parseFloat(num1) + parseFloat(num2));
+const num1 = 10
+const num2 = 15
+
+const addSum = (x, y) => {
+    console.log(x + y)
+  
+    // let addSum = document.getElementById("display-number2").innerHTML = addSum;
+  }
+addSum(num1, num2);
 
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+const firstNumber = 42;
+const secondNumber = 31;
+ console.log(typeof firstNumber);
+ console.log(typeof secondNumber);
+ 
+ const addBoth=(x, y)=>{
+   if (x < y && y > 0) {
+     return (y - x)
+   }
+ else {
+      return 'this will be negative'
+ }
+ }
+ addBoth(firstNumber, secondNumber)
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+const thirdNumber = 25;
+const fourthNumber = 16;
+ console.log(typeof thirdNumber);
+ console.log(typeof fourthNumber);
+ 
+ const subtractBoth=(x, y)=>{
+   if (x < y || y > 10) {
+     return (y - x)
+   }
+ else {
+      return 'this will be negative'
+ }
+ }
+ subtractBoth(thirdNumber, fourthNumber)
 
 
-// Write a JavaScript program that runs when both things are not true.  
+// Write a JavaScript program that runs when both things are not true. 
+
+const nameOne = 'Taylor';
+const nameTwo = 'Tipton';
+ console.log(typeof nameOne);
+ console.log(typeof nameTwo);
+ 
+ const fullName=(x, y)=>{
+   if (typeof x === Number && typeof y === Number) {
+     return 'My name is not a number'
+   }
+ else {
+      return 'My name is Taylor Tipton'
+ }
+ }
+ fullName(nameOne, nameTwo)
+
+
 
 // ***************************
 //         PART TWO
