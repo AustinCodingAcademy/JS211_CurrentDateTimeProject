@@ -22,6 +22,14 @@ const num = () => {
   document.getElementById("display-number1").toString(num);
 }
 
+const addSum = () => {
+  const num1 = 10
+    const num2 = 12
+    console.log(parseFloat(num1) + parseFloat(num2));
+  
+    let addSum = document.getElementById("display-number2").innerHTML = addSum;
+  }
+
 // const num = 11;
 // document.getElementById("display-number1").toString();
 // console.log('typeof num.toString()', typeof num.toString());
@@ -44,13 +52,13 @@ console.log('typeof paraseInt(str)', typeof parseInt(str));
 
   
 // Write a JavaScript program that adds 2 numbers together.
-const addition = () => {
-  const num1 = 10
-  const num2 = 12
-  console.log(parseFloat(num1) + parseFloat(num2))
+// const addSum = () => {
+//   const num1 = 10
+//   const num2 = 12
+//   console.log(parseFloat(num1) + parseFloat(num2))
 
-  document.getElementById("display-number2").innerHTML = addition;
-}
+//   let addSum = document.getElementById("display-number2").innerHTML = addSum;
+// }
 
 
 // const num1 = 10;
