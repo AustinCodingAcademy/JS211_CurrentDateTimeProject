@@ -9,17 +9,21 @@
     <h1>Hello World!</h1>
     <hr/>
     <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <button onclick="displayDate()">What is the current date and time?</button>
     <hr/>
-    <h2>Hello Again!</h2>
+    <h2>Taylor Tipton</h2>
     <hr/>
     <div id="display-number1"></div>
-    <button onclick="num()">Click Me Again</button>
+    <button onclick="num()">How old am I?</button>
     <hr/>
-    <h2>Hello Again Again!</h2>
+    <h2>How about a math question?</h2>
     <hr/>
     <div id="display-number2"></div>
     <button onclick="addSum()">What is 10 + 12?</button>
     <hr/>
+    <input type="number" name="input1" id="input1" placeholder="Pick a number!"><br>
+    <input type="number" name="input2" id="input2" placeholder="Pick another number!"><br>
+
+<button onclick="addTwo(document.getElementById('input1').value,document.getElementById('input2').value)">Let's add them together!</button>
   </body>
 </html>

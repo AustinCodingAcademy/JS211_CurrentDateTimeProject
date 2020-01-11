@@ -25,7 +25,7 @@ console.log(typeof b);
 // Below is a JavaScript program that came with the Git.
 
 const num = () => {
-  const num = 11
+  const num = 31
 
   document.getElementById("display-number1").innerHTML = num;
   document.getElementById("display-number1").toString(num);
@@ -48,6 +48,21 @@ console.log(typeof a);
   // * NaN
   // * String
   
+// Data types
+  
+  const number = 10;
+  console.log (typeof number);
+
+  const string = 'This is a string';
+  console.log(typeof string);
+
+  console.log(typeof true);
+
+  console.log(typeof undefinedValue);
+
+  console.log(typeof null === 'null');
+
+
 
   
 // Write a JavaScript program that adds 2 numbers together.
@@ -59,7 +74,8 @@ const num2 = 15
 const addSum = (x, y) => {
     console.log(x + y)
   
-    // let addSum = document.getElementById("display-number2").innerHTML = addSum;
+    document.getElementById("display-number2").innerHTML = addSum;
+    document.getElementById("display-number2").toString(addSum);
   }
 addSum(num1, num2);
 
@@ -117,7 +133,13 @@ const nameTwo = 'Tipton';
  }
  fullName(nameOne, nameTwo)
 
+// Adding two numbers together
 
+    const addTwo = (x,y) => {
+      const x = document.getElementById('input1').value;
+      const y = document.getElementById('input2').value;
+      const result = x + y;
+    }
 
 // ***************************
 //         PART TWO
