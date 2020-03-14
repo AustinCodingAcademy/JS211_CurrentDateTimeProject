@@ -16,7 +16,16 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
+let nowString = () => {
+  var num = document.getElementById('number').innerHTML
 
+  if (number = NaN) {
+    console.log(alert('this is not a number, try again'));
+  } else (
+    console.log(stringNum)
+  )
+  document.getElementById(stringNum).innerHTML = console.log('this is now a string' + number.toString());
+}
 
 // Write a JavaScript program to convert a string to the number.
 
