@@ -12,28 +12,51 @@ const displayDate = () => {
 
   document.getElementById("display-element").innerHTML = currentDate;
 }
- 
 
 // Write a JavaScript program to convert a number to a string.
-
-
+const x = 10
+x.toString()
+console.log(x)
 
 // Write a JavaScript program to convert a string to the number.
-
-
+let str = '7';
+parseInt(str); 
+console.log(str)
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
+  const popBool = true;
+  typeof popBool;
+
   // * Null
+  const popValue = null;
+  typeof popValue;
+  //the computer see's null as an object because of it's 0 type tag
+
   // * Undefined
+  let pineapple;
+  console.log(pineapple);
+
   // * Number
+  const num1 = 5
+  typeof num1;
+
   // * NaN
-  // * String
+  const thing = NaN
+  typeof NaN;
+  //the computer things not a number as a number
   
 
+  // * String
+  const firstName = "Devin"
+  typeof firstName;
+  
   
 // Write a JavaScript program that adds 2 numbers together.
-
+const addTwoNumbers = (num1, num2) => {
+  return num1 + num2
+}
+addTwoNumbers(20, 64)
 
 
 // Write a JavaScript program that runs only when 2 things are true.
