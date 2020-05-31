@@ -44,11 +44,11 @@ console.log(str)
   // * NaN
   const thing = NaN
   typeof NaN;
-  //the computer things not a number as a number
+  //the computer things NaN as a number
   
 
   // * String
-  const firstName = "Devin"
+  const firstName = "Devin";
   typeof firstName;
   
   
@@ -60,15 +60,25 @@ addTwoNumbers(20, 64)
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+const num1 = 10;
+const num2 = 20;
+if (num1 && num2) {
+  console.log(true)
+}
 
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+const myName = "Devin";
+if(myName === "Devin") {
+console.log(true)
+} else { 
+  console.log("incorrect user name")
+}
 
 
 // Write a JavaScript program that runs when both things are not true.  
-
 // ***************************
 //         PART TWO
 // ***************************
