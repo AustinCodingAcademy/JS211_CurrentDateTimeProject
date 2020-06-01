@@ -15,13 +15,14 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-
-
+var num = 15;
+  var n = num.toString();
+  console.log(n)
 
 // Write a JavaScript program to convert a string to the number.
-
-
-
+var a = "123abc";
+console.log(parseFloat('123abc'))
+console.log
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
   // * Null
@@ -29,22 +30,41 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
-
-  
+ console.log(typeof 12);
+ console.log(typeof "name" );
+ console.log(typeof true); 
+ console.log(typeof undefined);
+ console.log(typeof null);
 // Write a JavaScript program that adds 2 numbers together.
-
-
-
+var x =2
+var y = 3
+var z = x+y 
+console.log(z)
 // Write a JavaScript program that runs only when 2 things are true.
+var y = 5;
+var x = 10;
+if(y == 5 && x == 10 ){
 
-
-
+console.log("hello");
+}
 // Write a JavaScript program that runs when 1 of 2 things are true.
+var age =18
+if(age == 18 || age > 18){
+  console.log("you can drive");
+ 
+}
+ else{
+   console.log('you cannot drive')
+ }
 
+// Write a JavaScript program that runs when both things are not true.
+var gender = "female"; 
+var age = 16;
 
+if(age != 21 && gender != "male"){
 
-// Write a JavaScript program that runs when both things are not true.  
+  console.log("sorry dude")
+}
 
 // ***************************
 //         PART TWO
