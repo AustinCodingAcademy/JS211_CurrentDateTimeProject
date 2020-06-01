@@ -70,14 +70,23 @@ if (num1 && num2) {
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
-const myName = "Devin";
-if(myName === "Devin") {
-console.log(true)
-} else { 
-  console.log("incorrect user name")
+// const myName = "Devin";
+// if(myName === "Devin") {
+// console.log(true)
+// } else { 
+//   console.log("incorrect user name")
+// }
+const discountAge = 55;
+const discountPercent = .2;
+
+const seniorDiscount = (x,y) => {
+  if (45 < discountAge) {
+    console.log("no discount")
+  } else {
+    console.log("discount 20%")
+  }
 }
-
-
+seniorDiscount(discountAge, discountPercent);
 // Write a JavaScript program that runs when both things are not true.  
 // ***************************
 //         PART TWO
