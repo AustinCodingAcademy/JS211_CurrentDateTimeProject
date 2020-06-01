@@ -12,8 +12,6 @@ const displayDate = () => {
 
   document.getElementById("display-element").innerHTML = currentDate;
 }
- 
-
 // Write a JavaScript program to convert a number to a string.
 var num = 15;
   var n = num.toString();
