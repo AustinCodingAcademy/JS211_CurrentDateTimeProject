@@ -87,7 +87,15 @@ const seniorDiscount = (x,y) => {
   }
 }
 seniorDiscount(discountAge, discountPercent);
+
 // Write a JavaScript program that runs when both things are not true.  
+const twoThings = (x, y) => {
+  if (x !== 8 || y !== 100) {
+    console.log(x, y)
+    return false
+  }
+}
+
 // ***************************
 //         PART TWO
 // ***************************
