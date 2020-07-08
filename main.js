@@ -6,19 +6,23 @@
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
 console.log(new Date)
-
 const displayDate = () => {
   const currentDate = new Date()
-
   document.getElementById("display-element").innerHTML = currentDate;
-}
- 
+} 
 
 // Write a JavaScript program to convert a number to a string.
-
+let string = '45';
+let numS = parseInt(string);
+console.log(numS)
+console.log(string)
 
 
 // Write a JavaScript program to convert a string to the number.
+let numS2 = 15;
+let string2 = numS2.toString();
+console.log(string2)
+console.log(numS2)
 
 
 
@@ -29,22 +33,53 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
+
+  function isDataType(arg) {
+    return typeof arg;
+  }
+  console.log(isDataType(4))
+// replace "4" with different data type to change
 
   
 // Write a JavaScript program that adds 2 numbers together.
-
-
+const numAdd = (a, b) => {
+  let sum = a + b ;
+  return sum
+  }
+  console.log(numAdd(2, 3))
+  
+// document.getElementById("button-two").innerHTML = sum;
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+const c = 3;
+const d = -2;
 
+const onTrue = (c, d) => {
+if (c > 0 && d < 0) {
+  return true
+} else return false
+}
+console.log(onTrue(0, 5))
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const a = 3;
+const b = -2;
 
+console.log(a > 0 || b > 0);
+//expected output: true
 
 
 // Write a JavaScript program that runs when both things are not true.  
+const c = 3;
+const d = -2;
+
+const onTrue = (c, d) => {
+if (c > 0 || d < 0) {
+  return true
+} else return false
+}
+console.log(onTrue(3, 5))
 
 // ***************************
 //         PART TWO
