@@ -12,18 +12,28 @@ const displayDate = () => {
 } 
 
 // Write a JavaScript program to convert a number to a string.
-let string = '45';
-let numS = parseInt(string);
-console.log(numS)
-console.log(string)
+let firstNum = null
 
+const stringy = (num) => {
+firstNum = parseInt(num)
+}
+
+const num2String = () => {
+  let stringy = firstNum.toString();
+  return document.getElementById("button-one").innerHTML = stringy;
+}
 
 // Write a JavaScript program to convert a string to the number.
-let numS2 = 15;
-let string2 = numS2.toString();
-console.log(string2)
-console.log(numS2)
+let words = null
 
+const stringyBoi = (num) => {
+  words = parseInt(num)
+}
+
+const string2Num = () => {
+  let stringyBoi = words.parseInt();
+  return document.getElementById("second-button").innerHTML = stringyBoi;
+ }
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -34,7 +44,7 @@ console.log(numS2)
   // * NaN
   // * String
 
-  function isDataType(arg) {
+  const isDataType = (arg) => {
     return typeof arg;
   }
   console.log(isDataType(4))
@@ -52,9 +62,6 @@ const numAdd = (a, b) => {
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-const c = 3;
-const d = -2;
-
 const onTrue = (c, d) => {
 if (c > 0 && d < 0) {
   return true
@@ -63,23 +70,22 @@ if (c > 0 && d < 0) {
 console.log(onTrue(0, 5))
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-const a = 3;
-const b = -2;
-
-console.log(a > 0 || b > 0);
-//expected output: true
-
-
-// Write a JavaScript program that runs when both things are not true.  
-const c = 3;
-const d = -2;
-
-const onTrue = (c, d) => {
-if (c > 0 || d < 0) {
+const oneTrue = (a, b) => {
+if(a > 0 || b > 0) {
   return true
 } else return false
 }
-console.log(onTrue(3, 5))
+console.log(oneTrue(5, 7))
+
+//expected output: true
+
+// Write a JavaScript program that runs when both things are not true.  
+const notTrue = (e, f) => {
+if (e > 0 || f < 0) {
+  return true
+} else return false
+}
+console.log(notTrue(3, 5))
 
 // ***************************
 //         PART TWO
@@ -100,3 +106,5 @@ console.log(onTrue(3, 5))
 // Video1: https://player.vimeo.com/video/377147232
 // Video2: https://www.youtube.com/embed/bkvH28PXLWc
 // Video3: https://www.youtube.com/embed/TrGI9Yki-24
+
+
