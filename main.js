@@ -16,9 +16,53 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
+const convertNumToString = (num) => {
+  return num.toString()
+}
+
+console.log()
+
+
+
+
+
+
+
+
+
+
+let firstNum = null
+
+const saveFirstNumber = (num) => {
+  firstNum = parseInt(num)
+}
+
+const numberToString = () => {
+  let saveFirstNumber = firstNum.toString();  
+  document.getElementById("display-element").innerHTML = num.toString();
+}
+
+
+
+
+
+
+// let userInput = document.getElementById("user-input").innerHTML;
+
+// const inputToString = () => {  
+//   let a = userInput.toString();  
+//   return a;
+// }
+
 
 
 // Write a JavaScript program to convert a string to the number.
+
+// const convertStringToNumber = (x) => parseInt(x)
+
+const convertStringToNumber = (string) => {
+  return parseInt(string)
+}
 
 
 
@@ -29,22 +73,30 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
+const showDataType = (data) => typeof data
+
+console.log(showDataType())
 
   
 // Write a JavaScript program that adds 2 numbers together.
+
+// const addTwo = (x, y) => x + y
 
 
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+const ifBothAreTrue = (x, y) => (x && y) ? true : false 
+
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
-
+const ifEitherAreTrue = (x, y) => (x || y) ? true : false 
 
 // Write a JavaScript program that runs when both things are not true.  
+
+const ifNeitherAreTrue = (x, y) => (x || y) ? true : false 
 
 // ***************************
 //         PART TWO
