@@ -12,29 +12,27 @@ const displayDate = () => {
 } 
 
 // Write a JavaScript program to convert a number to a string.
-let firstNum = null
-
-const stringy = (num) => {
-firstNum = parseInt(num)
-}
-
-const num2String = () => {
-  let stringy = firstNum.toString();
-  return document.getElementById("button-one").innerHTML = stringy;
-}
-
-// Write a JavaScript program to convert a string to the number.
-let words = null
-
-const stringyBoi = (num) => {
-  words = parseInt(num)
-}
-
-const string2Num = () => {
-  let stringyBoi = words.parseInt();
-  return document.getElementById("second-button").innerHTML = stringyBoi;
+const storeNumber = (numA) => {
+  let inputString = numA
+  convertNumToString(inputString)
+  console.log(inputString)
  }
 
+const convertNumToString = (numA) => {
+  let string = numA.toString()
+  document.getElementById("number-to-string").innerHTML = string;
+}
+
+console.log(convertNumToString(69))
+console.log(convertNumToString(103))
+
+// Write a JavaScript program to convert a string to the number.
+const convertStringToNum = (string) => {
+  return parseInt(string)
+}
+console.log(convertStringToNum("5"))
+console.log(convertStringToNum("hello"))
+ 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
@@ -44,12 +42,19 @@ const string2Num = () => {
   // * NaN
   // * String
 
-  const isDataType = (arg) => {
-    return typeof arg;
-  }
-  console.log(isDataType(4))
+  // const isDataType = (arg) => {
+  //   return typeof arg;
+  // }
+  // console.log(isDataType(4))
 // replace "4" with different data type to change
 
+const showDataType = (data) => {
+  return typeof data
+}
+
+console.log(showDataType(true))
+console.log(showDataType(7))
+console.log(showDataType("button stuff"))
   
 // Write a JavaScript program that adds 2 numbers together.
 const numAdd = (a, b) => {
@@ -62,30 +67,36 @@ const numAdd = (a, b) => {
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-const onTrue = (c, d) => {
-if (c > 0 && d < 0) {
-  return true
-} else return false
+const ifBothAreTrue = (thing1, thing2) => {
+  if( thing1 && thing2 ) {
+    return true
+  } else {
+    return false
+  }
 }
-console.log(onTrue(0, 5))
+console.log(ifBothAreTrue(0, 5))
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-const oneTrue = (a, b) => {
-if(a > 0 || b > 0) {
-  return true
-} else return false
+const ifEitherAreTrue = (thing1, thing2) => {
+  if( thing1 || thing2 ) {
+    return true
+  } else {
+    return false
+  }
 }
-console.log(oneTrue(5, 7))
+console.log(ifEitherAreTrue(5, 7))
 
 //expected output: true
 
 // Write a JavaScript program that runs when both things are not true.  
-const notTrue = (e, f) => {
-if (e > 0 || f < 0) {
-  return true
-} else return false
+const ifNeitherAreTrue = (thing1, thing2) => {
+  if( !thing1 && !thing2 ) {
+    return true
+  } else {
+    return false
+  }
 }
-console.log(notTrue(3, 5))
+console.log(ifNeitherAreTrue(3, 5))
 
 // ***************************
 //         PART TWO
