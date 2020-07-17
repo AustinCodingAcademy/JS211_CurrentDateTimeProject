@@ -6,10 +6,33 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>GUESS THAT DATA TYPE!!!</h1>
     <hr/>
     <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <div id="display-type"></div>
+    <hr>
+
+    <button onclick="displayDate()">Click Me</button><br>
+
+    <input type="text" value="" name="Num" placeholder="Input Number" onkeyup="changeString(this.value)"><br>
+
+    <input type="number" value="" name="Num" placeholder="Input Number" onkeyup="changeNum(this.value)"><br>
+
+    <input type="textarea" value="" name="Num" placeholder="Input Anything" onkeyup="identifyType(this.value)"><br>
+
+    <input type="text" id="value1" name="value1" placeholder="First Number" value=""/>
+    <input type="text" id="value2" name="value2" placeholder="Second Number" value=""/>
+    <input type="button" name="Sumbit" value="Add" onclick="addNumbers()"/><br>
+
+    <input type="text" id="valueX" name="value1" placeholder="Value X" value=""/>
+    <input type="text" id="valueY" name="value2" placeholder="Value Y" value=""/><br>
+
+    <input type="button" name="Sumbit" value="Both True" onclick="confirmTruth()"/>
+
+    <button onclick="confirmLie()">Half True</button>
+
+    <button onclick="confirmFalse()">Not(!) True</button><br>
+
     <hr/>
   </body>
 </html>
