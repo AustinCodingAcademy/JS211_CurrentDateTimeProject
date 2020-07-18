@@ -50,10 +50,9 @@ const convertStringToNum = (numA) => {
   // console.log(isDataType(4))
 // replace "4" with different data type to change
 
-const showDataType = (type) => {
-  console.log(typeof type)
-  // document.getElementById("typeof-input").innerHTML = type;
-  document.getElementById("typeof-input").innerHTML = typeof type;
+const showDataType = (inputStuff) => {
+  inputStuff = document.getElementById("input-stuff").value
+  document.getElementById("type-of-input").innerHTML = typeof inputStuff;
 }
 
   
