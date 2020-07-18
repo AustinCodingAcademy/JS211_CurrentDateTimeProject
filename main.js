@@ -11,27 +11,29 @@ const displayDate = () => {
   document.getElementById("display-element").innerHTML = currentDate;
 } 
 
-// Write a JavaScript program to convert a number to a string.
-const storeNumber = (numA) => {
-  let inputString = numA
-  convertNumToString(inputString)
-  console.log(inputString)
- }
 
-const convertNumToString = (numA) => {
-  let string = numA.toString()
-  document.getElementById("number-to-string").innerHTML = string;
+// Write a JavaScript program to convert a number to a string.
+const convertNumToString = (numInput) => {
+ numInput = document.getElementById("numInput").value
+ document.getElementById("results2").innerHTML = `${numInput} is a ${typeof(numInput)}`;
 }
 
-console.log(convertNumToString(69))
-console.log(convertNumToString(103))
 
 // Write a JavaScript program to convert a string to the number.
-const convertStringToNum = (string) => {
-  return parseInt(string)
+let stringInput = ""
+
+// const storeString = (string) => {
+//   let stringInput = string
+//   convertNumToString(numInput)
+// }
+
+const convertStringToNum = (numA) => {
+  numA = document.getElementById("stringInput").value
+  x = parseInt(numA)
+  document.getElementById("results").innerHTML = `${x} is a ${typeof(x)}`;
+  console.log(typeof(x))
 }
-console.log(convertStringToNum("5"))
-console.log(convertStringToNum("hello"))
+
  
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -48,19 +50,21 @@ console.log(convertStringToNum("hello"))
   // console.log(isDataType(4))
 // replace "4" with different data type to change
 
-const showDataType = (data) => {
-  return typeof data
+const showDataType = (type) => {
+  console.log(typeof type)
+  // document.getElementById("typeof-input").innerHTML = type;
+  document.getElementById("typeof-input").innerHTML = typeof type;
 }
 
-console.log(showDataType(true))
-console.log(showDataType(7))
-console.log(showDataType("button stuff"))
   
 // Write a JavaScript program that adds 2 numbers together.
 const numAdd = (a, b) => {
-  let sum = a + b ;
-  return sum
+  a = document.getElementById("value1").value
+  b = document.getElementById("value2").value
+  let sum = parseInt(a) + parseInt(b) ;
+  document.getElementById("add-numbers").innerHTML = sum ;
   }
+
   console.log(numAdd(2, 3))
   
 // document.getElementById("button-two").innerHTML = sum;

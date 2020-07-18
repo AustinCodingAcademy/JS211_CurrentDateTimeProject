@@ -5,21 +5,39 @@
     <title></title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>What that data do?</h1>
     <hr/>
     <div id="display-element"></div>
-    <button onclick="displayDate()">Display Date</button>
+    <button onclick="displayDate()">Click For Current Date</button>
 
-    <div id="number-to-string"></div>
-    <input type="number" id="numInput" value="" onkeyup="storeNumber(this.value)"></input>
-    <button onclick="convertNumToString()">Number to String</button>
+    <div id="string-to-number"></div>
+    <input type="text" id="stringInput" value="" placeholder="Input Number"></input>
+    <button onclick="convertStringToNum()">String to Number</button>
+    <div id="results"></div>
+
+   <div id="number-to-string"></div>
+     <input type="number" id="numInput" value="" placeholder="Input Number" ></input>
+     <button onclick="convertNumToString()">Number to String</button>
+     <div id="results2"></div>
   
-    <div id="button-two"></div>
-    <input type="text" id="stringInput" value="" onkeyup="stringyBoi(this.value)"></input>
-    <button onclick="string2Num()">Click Me</button>
 
-<div id="button-three"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <div id="typeof-input">Input Something to see data</div>
+    <input type="textarea" value="" name="Num" placeholder="Input Anything" onkeyup="showDataType(this.value)"><br>
+    <br>
+
+    <div id="add-numbers"></div>
+    <input type="number" id="value1" name="value1" placeholder="First Number" value=""/>
+    <input type="number" id="value2" name="value2" placeholder="Second Number" value=""/>
+    <input type="button" name="Submit" value="Add" onclick="numAdd()"/>
+    <br>
+   
+    <input type ="text" id="valueX" name="value1" placeholder="Value X" value=""/>
+    <input type="text" id="valueY" name="value2" placeholder="Value Y" value=""/>
+    <br>
+    <input type="button" name="submit" value="Both True" onclick="bothAreTrue()"/>
+    <button onclick="oneIsTrue()">One is True</button>
+    <button onclick="neitherAreTrue()">Neither are True</button>
+
  <script src="main.js"></script>
   </body>
 
