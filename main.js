@@ -64,42 +64,54 @@ const numAdd = (a, b) => {
   document.getElementById("add-numbers").innerHTML = sum ;
   }
 
-  console.log(numAdd(2, 3))
-  
-// document.getElementById("button-two").innerHTML = sum;
+
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-const ifBothAreTrue = (thing1, thing2) => {
-  if( thing1 && thing2 ) {
-    return true
+// const ifBothAreTrue = (thing1, thing2) => {
+//   if( thing1 && thing2 ) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+const ifBothAreTrue = () => {
+  let x = parseInt(document.getElementById("valueX").value);
+  let y = parseInt(document.getElementById("valueY").value);
+  if (x === y) {
+    document.getElementById("true-false").innerHTML = "True";
   } else {
-    return false
+    document.getElementById("true-false").innerHTML = "False";
   }
-}
-console.log(ifBothAreTrue(0, 5))
+  }
+
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-const ifEitherAreTrue = (thing1, thing2) => {
-  if( thing1 || thing2 ) {
-    return true
+const ifEitherAreTrue = () => {
+  let x = parseInt(document.getElementById("valueX").value);
+  let y = parseInt(document.getElementById("valueY").value);
+  if (x || y > 0) {
+    document.getElementById("true-false").innerHTML = "True";
   } else {
-    return false
+    document.getElementById("true-false").innerHTML = "False";
   }
 }
-console.log(ifEitherAreTrue(5, 7))
+
 
 //expected output: true
 
 // Write a JavaScript program that runs when both things are not true.  
-const ifNeitherAreTrue = (thing1, thing2) => {
-  if( !thing1 && !thing2 ) {
-    return true
+const ifNeitherAreTrue = () => {
+  let x = parseInt(document.getElementById("valueX").value);
+  let y = parseInt(document.getElementById("valueY").value);
+  if (x <= 0 && y <= 0) {
+    document.getElementById("true-false").innerHTML = "True";
   } else {
-    return false
+    document.getElementById("true-false").innerHTML = "False";
   }
 }
-console.log(ifNeitherAreTrue(3, 5))
+
 
 // ***************************
 //         PART TWO

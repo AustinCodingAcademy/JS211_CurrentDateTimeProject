@@ -22,7 +22,7 @@
   
 
     <div id="type-of-input">Input Something to see data type!</div>
-    <input id="input-stuff" type="" value="" name="Num" placeholder="Input Anything" onkeyup="showDataType(this.value)"><br>
+    <input id="input-stuff" type="textarea" value="" name="Num" placeholder="Input Anything" onkeyup="showDataType(this.value)"><br>
     
 
     <div id="add-numbers"></div>
@@ -31,12 +31,13 @@
     <input type="button" name="Submit" value="Add" onclick="numAdd()"/>
     <br>
    
+    <div id="true-false"></div>
     <input type ="text" id="valueX" name="value1" placeholder="Value X" value=""/>
     <input type="text" id="valueY" name="value2" placeholder="Value Y" value=""/>
     <br>
-    <input type="button" name="submit" value="Both True" onclick="bothAreTrue()"/>
-    <button onclick="oneIsTrue()">One is True</button>
-    <button onclick="neitherAreTrue()">Neither are True</button>
+    <input type="button" name="submit" value="Both True" onclick="ifBothAreTrue()"/>
+    <button onclick="ifEitherAreTrue()">One is True</button>
+    <button onclick="ifNeitherAreTrue()">Neither are True</button>
 
  <script src="main.js"></script>
   </body>
