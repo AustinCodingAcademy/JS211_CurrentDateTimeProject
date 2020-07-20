@@ -6,65 +6,35 @@
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
 console.log(new Date)
-
 const displayDate = () => {
   const currentDate = new Date()
-
   document.getElementById("display-element").innerHTML = currentDate;
-}
- 
+} 
+
 
 // Write a JavaScript program to convert a number to a string.
-
-const convertNumToString = (num) => {
-  return num.toString()
+const convertNumToString = (numInput) => {
+  numInput = document.getElementById("numInput").value
+  document.getElementById("results2").innerHTML = `${numInput} is a ${typeof(numInput)}`;
 }
-
-console.log()
-
-
-
-
-
-
-
-
-
-
-let firstNum = null
-
-const saveFirstNumber = (num) => {
-  firstNum = parseInt(num)
-}
-
-const numberToString = () => {
-  let saveFirstNumber = firstNum.toString();  
-  document.getElementById("display-element").innerHTML = num.toString();
-}
-
-
-
-
-
-
-// let userInput = document.getElementById("user-input").innerHTML;
-
-// const inputToString = () => {  
-//   let a = userInput.toString();  
-//   return a;
-// }
-
 
 
 // Write a JavaScript program to convert a string to the number.
+let stringInput = ""
 
-// const convertStringToNumber = (x) => parseInt(x)
+// const storeString = (string) => {
+//   let stringInput = string
+//   convertNumToString(numInput)
+// }
 
-const convertStringToNumber = (string) => {
-  return parseInt(string)
+const convertStringToNum = (numA) => {
+  numA = document.getElementById("stringInput").value
+  x = parseInt(numA)
+  document.getElementById("results").innerHTML = `${x} is a ${typeof(x)}`;
+  console.log(typeof(x))
 }
 
-
+ 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
@@ -73,30 +43,63 @@ const convertStringToNumber = (string) => {
   // * Number
   // * NaN
   // * String
-const showDataType = (data) => typeof data
 
-console.log(showDataType())
+  // const isDataType = (arg) => {
+  //   return typeof arg;
+  // }
+  // console.log(isDataType(4))
+// replace "4" with different data type to change
+
+const showDataType = (inputStuff) => {
+  inputStuff = document.getElementById("input-stuff").value
+  document.getElementById("type-of-input").innerHTML = typeof inputStuff;
+}
 
   
 // Write a JavaScript program that adds 2 numbers together.
+const numAdd = (a, b) => {
+  a = document.getElementById("value1").value
+  b = document.getElementById("value2").value
+  let sum = parseInt(a) + parseInt(b) ;
+  document.getElementById("add-numbers").innerHTML = sum ;
+  }
 
-// const addTwo = (x, y) => x + y
-
-
+  console.log(numAdd(2, 3))
+  
+// document.getElementById("button-two").innerHTML = sum;
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-const ifBothAreTrue = (x, y) => (x && y) ? true : false 
-
-
+const ifBothAreTrue = (thing1, thing2) => {
+  if( thing1 && thing2 ) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(ifBothAreTrue(0, 5))
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const ifEitherAreTrue = (thing1, thing2) => {
+  if( thing1 || thing2 ) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(ifEitherAreTrue(5, 7))
 
-const ifEitherAreTrue = (x, y) => (x || y) ? true : false 
+//expected output: true
 
 // Write a JavaScript program that runs when both things are not true.  
-
-const ifNeitherAreTrue = (x, y) => (x || y) ? true : false 
+const ifNeitherAreTrue = (thing1, thing2) => {
+  if( !thing1 && !thing2 ) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(ifNeitherAreTrue(3, 5))
 
 // ***************************
 //         PART TWO

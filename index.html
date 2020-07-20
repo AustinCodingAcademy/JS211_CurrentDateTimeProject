@@ -5,33 +5,40 @@
     <title></title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>What that data do?</h1>
     <hr/>
-    
     <div id="display-element"></div>
-    
-    <div id="demo">paragraph</div>
-    <button onclick="numberToString()">Number to String</button>
-    <label for="Number to String">Number to String</label>
-      <input oninput="saveFirstNumber(this.value)" type="number" id="number-to-string" name="Number To String" value="">
-    <button onclick="displayDate()">Click Me</button>   
-    
-    
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>     
-    <div id="number-to-string-element"></div>
-    <button onclick="convertNumToString()">Click Me</button>     
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button> 
-    <button onclick="myFunction()">Click Me</button>
-    <button onclick="displayDate()">Click Me</button>
-    <form>
-      
+    <button onclick="displayDate()">Click For Current Date</button>
 
-      
-    </form>
-    <input></input>
-    <hr/>
-  <script src="main.js"></script>
+    <div id="string-to-number"></div>
+    <input type="text" id="stringInput" value="" placeholder="Input Number"></input>
+    <button onclick="convertStringToNum()">String to Number</button>
+    <div id="results"></div>
+
+   <div id="number-to-string"></div>
+     <input type="number" id="numInput" value="" placeholder="Input Number" ></input>
+     <button onclick="convertNumToString()">Number to String</button>
+     <div id="results2"></div>
+  
+
+    <div id="type-of-input">Input Something to see data type!</div>
+    <input id="input-stuff" type="number" value="" name="Num" placeholder="Input Anything" oninput="showDataType(this.value)"><br>
+    
+
+    <div id="add-numbers"></div>
+    <input type="number" id="value1" name="value1" placeholder="First Number" value=""/>
+    <input type="number" id="value2" name="value2" placeholder="Second Number" value=""/>
+    <input type="button" name="Submit" value="Add" onclick="numAdd()"/>
+    <br>
+   
+    <input type ="text" id="valueX" name="value1" placeholder="Value X" value=""/>
+    <input type="text" id="valueY" name="value2" placeholder="Value Y" value=""/>
+    <br>
+    <input type="button" name="submit" value="Both True" onclick="bothAreTrue()"/>
+    <button onclick="oneIsTrue()">One is True</button>
+    <button onclick="neitherAreTrue()">Neither are True</button>
+
+ <script src="main.js"></script>
   </body>
+
 </html>
