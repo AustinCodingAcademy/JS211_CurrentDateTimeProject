@@ -105,7 +105,7 @@ console.log(ifNeitherAreTrue(3, 5))
 //         PART TWO
 // ***************************
 
-// 1. download Live-Server by Ritwick Dey, 
+// 1. download Live-Server by Ritwick Dey,  
 // 2. reload VS Code, 
 // 3. click the "Go Live" button
 // 4. Go local host 5500 or http://127.0.0.1:5500/index.html to see your web page
