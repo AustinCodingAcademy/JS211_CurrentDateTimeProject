@@ -54,8 +54,6 @@ const notTrue = (bool1, bool2) => {
   return !bool1 && !bool2;
 };
 
-// Write a JavaScript program that runs when both things are not true.
-
 // ***************************
 //         PART TWO
 // ***************************
