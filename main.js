@@ -53,10 +53,10 @@ parseInt(z);      //the string is converted into a number
   
 // Write a JavaScript program that adds 2 numbers together.
 const addTwoNumbers = (num1, num2) => {
-  return num1 + num2
+  return num1 + num2;
 }
 
-// addTwoNumbers(7, 54)
+addTwoNumbers(7, 54)
 
 
 // Write a JavaScript program that runs only when 2 things are true.
@@ -70,29 +70,34 @@ const trueTwo = (a, b, c) => {
   }
 }
 
+trueTwo();
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-let a = 2;
-let b = 2;
-let c = 1;
+a = 2;
+b = 2;
+c = 1;
 
-const trueTwo = (a, b, c) => {
+const trueOne = (a, b, c) => {
   if ((a === b) || (c > b)){
     return true;
   }
 }
 
+trueOne();
+
 // Write a JavaScript program that runs when both things are not true.
 
-let a = 6;
-let b = 5;
-let c = 1;
+a = 6;
+b = 5;
+c = 1;
 
-const trueTwo = (a, b, c) => {
-  if ((a === b) || (c > b)){
-    return false;
+const falseTwo = (a, b, c) => {
+  if (!(a === b) && !(c > b)){
+    return true;
   }
 }
+
+falseTwo();
 
 // ***************************
 //         PART TWO
