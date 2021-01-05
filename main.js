@@ -15,11 +15,14 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-
-
+let num = 15
+num.toString()
+console.log(num.toString())
 
 // Write a JavaScript program to convert a string to the number.
-
+let x = '15'
+parseInt(x)
+console.log(parseInt(x))
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -33,12 +36,26 @@ const displayDate = () => {
 
   
 // Write a JavaScript program that adds 2 numbers together.
-
+const num1 = 5;
+const num2 = 3;
+const sumOfBoth = num1 + num2;
+console.log(sumOfBoth)
 
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+const testNum = (a) => {
+  if (a > 0) {
+    result = 'positive';
+  }
+  else {
+    result = 'negative';
+  }
+  return result;
+}
 
+console.log(testNum(-5));
+// expected output: "NOT positive"
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
