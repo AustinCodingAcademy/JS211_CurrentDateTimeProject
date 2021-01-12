@@ -2,14 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Date and Time Project</title>
     <script src="main.js"></script>
   </head>
   <body>
     <h1>Hello World!</h1>
     <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <button onclick="dayAndTime()">Click Me for Date</button><br><br>
+    <div id="display-element"></div><br>
+    <label for="quantity">Enter a Number:</label>
+    <input type="number" id="quantity" value="">
+    <button onclick="numToString()">Click to Convert to String</button><br><br>
+    <div id="display-string"></div><br>
+    <label for="stringNum">Enter a String:</label>
+    <input type="text" id="stringNum" value="">
+    <button onclick="stringToNum()">Click to Convert to Number</button><br><br>
+    <div id="display-num"></div>
+    <label for="number1">1st Number:</label>
+    <input type="number" id="number1" value="">
+    <label for="number2">2nd Number:</label>
+    <input type="number" id="number2" value="">
+    <button onclick="addition()">Sum of Numbers</button><br><br>
+    <div id="display-sum"></div>
+    <h3>Boolean Test One</h3>
+    <input type="radio" id="true" value="true">
+    <label for="true">True</label>
+    <input type="radio" id="false" value="false">
+    <label for="false">False</label><br>
+    <input type="radio" id="true2" value="true">
+    <label for="true2">True</label>
+    <input type="radio" id="false2" value="false">
+    <label for="false2">False</label><br>
+    <button onclick="booleanTestOne()">Check</button>
+    <label for="output">Output:</label>
+    <input type="text" id="output-display" value="">
     <hr/>
   </body>
 </html>

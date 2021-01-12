@@ -1,67 +1,113 @@
-// **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTIONS!!! You will be doing only front-end work in 421 and you need to brush up on your HTML elements**
+function dayAndTime(){
+  
+  const today = new Date();
+
+  document.getElementById("display-element").innerHTML = today;
+
+  console.log(new Date);
+  
+} 
 
 
-// ***************************
-//          PART ONE
-// ***************************
-// Write a JavaScript program to display the current day and time, start with:
-console.log(new Date)
 
-const displayDate = () => {
-  const currentDate = new Date()
+function numToString(){ 
 
-  document.getElementById("display-element").innerHTML = currentDate;
+  const x = document.getElementById("quantity").value; 
+
+  document.getElementById("display-string").innerHTML = '"' + x + '"'
+
+  console.log(x); 
+  
 }
- 
-
-// Write a JavaScript program to convert a number to a string.
 
 
+function stringToNum(){
 
-// Write a JavaScript program to convert a string to the number.
+  const x = document.getElementById("stringNum").value; 
 
+  document.getElementById("display-num").innerHTML = x;   
 
-
-// Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-  // * Boolean
-  // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
-  
-
-  
-// Write a JavaScript program that adds 2 numbers together.
+  console.log(x); 
+}
 
 
+function multipleDatatype(item){
 
-// Write a JavaScript program that runs only when 2 things are true.
+  if(typeof item === 'boolean'){
+    return 'boolean'; 
+  }else if(item === null){
+    return 'null'; 
+  }else if(item === undefined){
+    return 'undefined'; 
+  }else if(typeof item === 'number'){
+    return 'number';
+  }else if(typeof item === 'string'){
+    return 'string';
+  }else if(isNaN(item)){
+    return 'NaN'; 
+  }
+}
+
+let result = multipleDatatype(6);
+console.log('the datatype is:',result); 
+
+function addition(){
+
+  let x = document.getElementById("number1").value;  
+
+  let y = document.getElementById("number2").value; 
+
+  let sum = (Number(x) + Number(y)); 
+
+  document.getElementById("display-sum").innerHTML = sum; 
+
+  console.log(Number(x) + Number(y)); 
+}
+
+
+function booleanTestOne(){
+
+  let button1 = document.getElementById("true");
+  let button2 = document.getElementById("true2"); 
+  let outputBox = "";
+
+  if(button1.checked && button2.checked){
+    outputBox = "Correct";
+  }else{
+    outputBox = "Incorrect";
+  }
+
+  document.getElementById("output-display").value = outputBox; 
+
+  console.log(outputBox);
+}
 
 
 
-// Write a JavaScript program that runs when 1 of 2 things are true.
+
+function booleanTestTwo(bool1, bool2){
+
+  if(bool1 || bool2){
+    return 'test passed';
+  }else{
+    return 'test failed';
+  }
+}
+
+let y = booleanTestTwo(false,false);
+console.log(y);
 
 
+function booleanTestThree(bool1, bool2){
 
-// Write a JavaScript program that runs when both things are not true.  
+  if(!bool1 && !bool2){
+    return 'test passed';
+  }else{
+    return 'test failed';
+  }
+}
 
-// ***************************
-//         PART TWO
-// ***************************
-
-// 1. download Live-Server by Ritwick Dey, 
-// 2. reload VS Code, 
-// 3. click the "Go Live" button
-// 4. Go local host 5500 or http://127.0.0.1:5500/index.html to see your web page
-// 5. Or go use the `npm start` command and navigate to localhost:8080 (ctrl + C to close)
-// 6. go to `index.html` 
-// 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
+let z = booleanTestThree(false,false);
+console.log(z);
 
 
-
-
-// Additional Resources
-// Video1: https://player.vimeo.com/video/377147232
-// Video2: https://www.youtube.com/embed/bkvH28PXLWc
-// Video3: https://www.youtube.com/embed/TrGI9Yki-24
