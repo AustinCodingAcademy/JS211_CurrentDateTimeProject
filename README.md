@@ -20,7 +20,7 @@
 
 ### Hints
 
-1. Use [repl.it](https://www.repl.it) to write the solution code first. (its a faster environment vs using the `node main.js` command over and over again.)
+1. Use [repl.it](https://www.repl.it) to write the solution code first. (it's a faster environment vs using the `node main.js` command over and over again.)
 1. Download the Live Server package to VS Code by Ritwick Dey to view it at localhost:5500
 1. **OR** use the `npm start` command to view it at localhost:8080
 1. Use the [JS Docs at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString)
@@ -96,12 +96,12 @@ example `node 01week/rockPaperScissors.js`
 
 ### Running Tests
 
-Tests are a great way to make sure you code works the way you planned it would,
+Tests are a great way to make sure your code works the way you planned it would,
 and to make sure you don't break something in the future. We will be using them
 to test our understanding of the lesson. It's also our main way to assign grades
 for an assignment.
 
-To run a the tests on a file run `npm test path/to/file.js`, etc.
+To run the tests on a file run `npm test path/to/file.js`, etc.
 
 ### Running the Linter
 
