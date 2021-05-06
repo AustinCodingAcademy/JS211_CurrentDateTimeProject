@@ -6,10 +6,8 @@
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
 console.log(new Date)
-
 const displayDate = () => {
   const currentDate = new Date()
-
   document.getElementById("display-element").innerHTML = currentDate;
 }
  
@@ -30,11 +28,47 @@ const string2Num = (str) => {
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
+  const showDataType = (input) => {
+    return typeof input
+  }
+  
+  showDataType(false)
+
+
   // * Null
+  const showDataType = (input) => {
+    return typeof input
+  }
+  
+  showDataType()
+
+
   // * Undefined
+  const showDataType = (input) => {
+    return typeof input;
+  }
+  showDataType()
+
   // * Number
+  const showDataType = (input) => {
+    return typeof input
+  }
+  
+  showDataType(5)
+
   // * NaN
+  const showDataType = (input) => {
+    return typeof input
+  }
+  
+  showDataType(text)
+
   // * String
+  const showDataType = (input) => {
+    return typeof input
+  }
+  
+  showDataType("Hello Charlie")
   
   //Write a function that takes a variable that is a datatype 
   //return the type of that variable - using that 'typeof' operator
@@ -48,13 +82,36 @@ const add = (num1, num2) => {
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+const ifBothAreTrue = (thing1, thing2) => {
+  if( thing1 && thing2 > 0) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(ifBothAreTrue(0, 3))
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-
+const ifOneIsTrue = (thing1, thing2) => {
+  if( thing1 || thing2 > 0) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(ifOneIsTrue(0, 3))
 
 
 // Write a JavaScript program that runs when both things are not true.  
+const ifBothFalse = (thing1, thing2) => {
+  if (thing1 <= 0 && thing2 <= 0) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(ifBothFalse(-1, -1))
 
 // ***************************
 //         PART TWO
