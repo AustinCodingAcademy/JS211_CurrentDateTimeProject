@@ -15,11 +15,31 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
+const convertNumToString = (num) => {
+  return num.toString();
+}
 
+const numberToStringBtn = document.getElementById('numberToStringBtn');
+
+numberToStringBtn.addEventListener('click', () => {
+  const inputValue = document.getElementById('numberToStringInput').value;
+  let result = convertNumToString(inputValue);
+  document.getElementById('displayNumberToString').innerHTML = result;
+});
 
 
 // Write a JavaScript program to convert a string to the number.
+const convertStringToNum = (string) => {
+  return parseInt(string);
+}
 
+const stringToNumberBtn = document.getElementById('stringToNumberBtn');
+
+stringToNumberBtn.addEventListener('click', () => {
+  const inputValue = document.getElementById('stringToNumInput').value;
+  let result = convertStringToNum(inputValue);
+  document.getElementById('displayStringToNumber').innerHTML = result;
+});
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -29,22 +49,58 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
+
+const showDataType = (data) => {
+  return typeof data;
+}
+
+const showDataTypeBtn = document.getElementById('showDataTypeBtn');
+
+showDataTypeBtn.addEventListener('click', () => {
+  const inputValue = document.getElementById('showDataTypeInput').value;
+  const result = showDataType(inputValue);
+  document.getElementById('displayDataType').innerHTML = result;
+});
   
 
   
 // Write a JavaScript program that adds 2 numbers together.
+const addTwoNumbers = (num1, num2) => {
+  return num1 + num2;
+}
 
+const addTwoNumbersBtn = document.getElementById('addTwoNumbersBtn');
+
+addTwoNumbersBtn.addEventListener('click', () => { 
+  let num1 = parseInt(document.getElementById('addTwoNumbersInputOne').value);
+  let num2 = parseInt(document.getElementById('addTwoNumbersInputTwo').value);
+  const result = addTwoNumbers(num1, num2);
+  document.getElementById('displayAddTwoNumbers').innerHTML = result;
+});
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+const bothAreTrue = (test1, test2) => {
+  return test1 && test2;
+}
 
+console.log(bothAreTrue(true, true));
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const oneIsTrue = (test1, test2) => {
+  return (test1 && !test2) || (!test1 && test2);
+}
 
+console.log(oneIsTrue(true, false));
 
 
 // Write a JavaScript program that runs when both things are not true.  
+const bothAreFalse = (test1, test2) => {
+  return !test1 && !test2;
+}
+
+console.log(bothAreFalse(false, false));
 
 // ***************************
 //         PART TWO

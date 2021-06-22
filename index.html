@@ -3,13 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <h1>Hello World!</h1>
     <hr/>
+
+    <h3>Display the Current Date and Time</h3>
     <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <button onclick="displayDate()">Display</button>
+
     <hr/>
+
+    <h3>Convert a Number to a String</h3>
+    <input type="number" id="numberToStringInput">
+    <button id="numberToStringBtn">Submit</button>
+    <p id="displayNumberToString"></p>
+
+    <hr />
+
+    <h3>Convert a String to a Number</h3>
+    <input type="text" id="stringToNumInput">
+    <button id="stringToNumberBtn">Submit</button>
+    <p id="displayStringToNumber"></p>
+
+    <hr />
+
+    <h3>Show Data Types</h3>
+    <input type="text" id="showDataTypeInput">
+    <button id="showDataTypeBtn">Submit</button>
+    <p id="displayDataType"></p>
+
+    <hr />
+
+    <h3>Add Two Numbers</h3>
+    <input type="number" id="addTwoNumbersInputOne">
+    <input type="number" id="addTwoNumbersInputTwo">
+    <button id="addTwoNumbersBtn">Submit</button>
+    <p id="displayAddTwoNumbers"></p>
   </body>
 </html>
