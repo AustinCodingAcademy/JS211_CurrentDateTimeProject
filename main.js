@@ -34,7 +34,7 @@ const convertStringToNum = (string) => {
 // * Number
 // * NaN
 // * String
-
+// hello
 const showDataType = (data) => {
   if (typeof data === "boolean") {
     return `${data} is a boolean value.`;
