@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title></title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAZZ5EAAAAAACuIugBEmccAJZHMABhzowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERETMzERERERFVRDMzERERFVVUQzMxEREVVVRDMzERERERERERERERAAIlVURDEREAAiVVREMREQAAIlVUQxEREAACJVVREREQAAAiVVEREREAAAJVEREREREAAhERERERERERERERERERERERERH//wAA//8AAPw/AADwDwAA4AcAAOAHAACAAQAAQAIAAEACAACAAQAA4AcAAOAHAADwDwAA/D8AAP//AAD//wAA"
+      rel="icon"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <h1>Hello World!</h1>
-    <hr/>
+    <hr />
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    <hr />
+    <p>Input number -> convert to string</p>
+    <input type="number" id="numInput1" />
+    <button id="button1">Convert!</button>
+    <p id="output1"></p>
+    <hr />
+    <p>Input str -> convert to num</p>
+    <input type="number" id="numInput2" />
+    <button id="button2">Convert!</button>
+    <p id="output2"></p>
+    <hr />
+    <p>Check type:</p>
+    <input type="text" id="typeOfInput" />
+    <button id="button3">Check!</button>
+    <p id="output3"></p>
+    <hr />
+    <p>Addition</p>
+    <input type="number" id="addition1" />
+    <input type="number" id="addition2" />
+    <button id="button4">Check!</button>
+    <p id="output4"></p>
+    <hr />
+    <form id="myForm1">
+      <p>This form checks if both are true:</p>
+      <fieldset>
+        <legend>Choice 1</legend>
+        <input type="radio" name="group1" value="1" checked /> True
+        <input type="radio" name="group1" value="0" /> False
+      </fieldset>
+
+      <fieldset>
+        <legend>Choice 2</legend>
+        <input type="radio" name="group2" value="1" checked /> True
+        <input type="radio" name="group2" value="0" /> False
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <p id="log1"></p>
+    <hr />
+    <br />
+    <br />
+    <form id="myForm3">
+      <p>This form checks if either are true:</p>
+      <fieldset>
+        <legend>Choice 1</legend>
+        <input type="radio" name="group1" value="1" checked /> True
+        <input type="radio" name="group1" value="0" /> False
+      </fieldset>
+
+      <fieldset>
+        <legend>Choice 2</legend>
+        <input type="radio" name="group2" value="1" checked /> True
+        <input type="radio" name="group2" value="0" /> False
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <p id="log3"></p>
+    <hr />
+    <br />
+    <br />
+    <form id="myForm2">
+      <p>This form checks if both are false:</p>
+      <fieldset>
+        <legend>Choice 1</legend>
+        <input type="radio" name="group1" value="1" checked /> True
+        <input type="radio" name="group1" value="0" /> False
+      </fieldset>
+
+      <fieldset>
+        <legend>Choice 2</legend>
+        <input type="radio" name="group2" value="1" checked /> True
+        <input type="radio" name="group2" value="0" /> False
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <p id="log2"></p>
+    <hr />
   </body>
 </html>
