@@ -1,4 +1,4 @@
-// **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTIONS!!! You will be doing only front-end work in 421 and you need to brush up on your HTML elements**
+// **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTIONS!!!
 
 
 // ***************************
@@ -29,6 +29,7 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
+// NOTE: Exlclude this function while completing Part II. The Data Type will always return as a String. If you want a challenge, come back to this function and start in the console. Then see what you can make of it. Again, simply skip this function while completing Part II of this project.
   
 
   
